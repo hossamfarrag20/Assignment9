@@ -72,15 +72,11 @@ function getQuote() {
 //         button.innerHTML = '<i class="fa-solid fa-moon"></i>';
 //     }
 // }
-// =============================== with help of AI================================
 function DarkWhiteToggle() {
     const body = document.body;
     const button = document.getElementById('button');
-
-    // Check if the user prefers dark mode
     const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-    // Function to toggle the dark mode manually
     function toggleDarkMode() {
         if (body.classList.contains('colortoggle')) {
             body.classList.remove('colortoggle');
@@ -91,7 +87,6 @@ function DarkWhiteToggle() {
         }
     }
 
-    // Check and apply the user's preference on page load
     if (prefersDarkScheme) {
         body.classList.add('colortoggle');
         button.innerHTML = '<i class="fa-solid fa-moon"></i>';
@@ -100,9 +95,7 @@ function DarkWhiteToggle() {
         button.innerHTML = '<i class="fa-regular fa-sun"></i>';
     }
 
-    // Add event listener to the button to toggle dark mode manually
     button.addEventListener('click', toggleDarkMode);
 }
 
-// Call the function on page load
 DarkWhiteToggle();
