@@ -70,6 +70,7 @@ button {
     font-weight: 700;
     height: 80px;
     width: 200px;
+    user-select: none;
     margin-top: 40px;
     transition: 0.8s all;
     -webkit-transition: 0.8s all;

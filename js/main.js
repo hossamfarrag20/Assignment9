@@ -12,9 +12,6 @@ function getQuote() {
         num++;
         if (num >= quotes.length) {
             num = num - 2;
-            if (num == checker[checker.length - 1]) {
-                num = num - 1;
-            }
         }
     }
     checker.push(num);
