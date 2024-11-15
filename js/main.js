@@ -41,9 +41,9 @@ function getQuote() {
         "-Benjamin Franklin",
         "-Aristotle",
         "Prophet Mohamed",
-        "― Omer Ebn EL-Khatab",
-        "― Omer Ebn EL-Khatab",
-        "― Omer Ebn EL-Khatab"];
+        "― Omer Ebn EL-Khattab",
+        "― Omer Ebn EL-Khattab",
+        "― Omer Ebn EL-Khattab"];
 
     var num = Math.floor(Math.random() * quotes.length);
     if (num == checker[checker.length - 1]) {
